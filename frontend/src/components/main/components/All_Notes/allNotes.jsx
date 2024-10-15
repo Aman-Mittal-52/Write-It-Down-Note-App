@@ -68,7 +68,7 @@ function AllNotes() {
 
             setLoading(true);
 
-            const response = await fetch(`http://localhost:5000/notes/delete/${noteID}`, {
+            const response = await fetch(`https://write-it-down-note-app.onrender.com/notes/delete/${noteID}`, {
                 method: 'DELETE',
                 headers: {
                     'Authorization': `Bearer ${token}`,
